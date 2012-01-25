@@ -1,0 +1,57 @@
+<!DOCTYPE html><html><head>  <meta charset='utf-8'>  <title>MotoMania/MotoMania @ GitHub</title>  <style TYPE="text/css">    
+body {
+	margin-top: 1.0em;
+	font-family: Helvetica, Arial, FreeSans, san-serif;
+	color: #000000;
+	background-color: #FFFFFF;
+}    #container {      margin: 0 auto;      width: 700px;    }    h1 {
+	font-size: 3.8em;
+	color: #0000FF;
+	margin-bottom: 3px;
+}    h1 .small { font-size: 0.4em; }    h1 a { text-decoration: none }    h2 {
+	font-size: 1.5em;
+	color: #0000FF;
+}    h3 { text-align: center; color: #4dae6d; }    a { color: #4dae6d; }    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}    .download { float: right; }    pre { background: #000; color: #fff; padding: 15px;}    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}    .footer { text-align:center; padding-top:30px; font-style: italic; }  #container h1 a {	font-family: Verdana, Geneva, sans-serif;}
+</style><link href="css/default.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+body,td,th {
+	color: #0000FF;
+}
+</style>
+</head><body>  <a HREF="https://github.com/MotoMania/MotoMania"><img STYLE="position: absolute; top: 0; right: 0; border: 0;" SRC="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" ALT="Fork me on GitHub" /></a>  <div id="container"><h1 align="center"><em><img src="images/motologo.png" alt="" width="299" height="164" border="0"><br>
+    Moto Mania<br>
+    Repository  </em></h1>      
+  <div CLASS="description">          <div align="center">      <p>MotoMania Android Repository </p>
+      <p>&quot;Nothing but Android Motorola SmartPhones&quot;</p>
+</div>  </div>          
+  <h2>Authora and Contract Info:</h2>
+  <h3><a href="mailto:motomaniac@worldofross.com"><strong>Moto Maniac</strong></a></h3>  
+<h2>Download:</h2>    
+<p>      <span id="container">You can download our project in either<strong> <a HREF="https://github.com/MotoMania/MotoMania/zipball/ics">zip</a></strong> or<strong> <a href="https://github.com/MotoMania/MotoMania/tarball/ics">tar</a></strong> formats.</span></p>
+<h2>Build Development Environment:</h2>
+<h2>Install Android SDK:</h2>
+<p>See instructions <a href="http://developer.android.com/sdk/index.html">HERE</a></p>
+<h2>Setup Development Dependences:</h2>
+<h3>For Both Systems</h3>
+<h3>For 32 bit Systems</h3>
+<h3>For 64 bit Systems</h3>
+<pre>. sudo apt-get install git-core gnupg flex bison gperf libsdl-dev libesd0-dev   <br>. sudo apt-get libwxgtk2.6-dev build-essential zip curl libncurses5-dev zlib1g-dev  
+. suto apt-get sun-java5-jdk </pre>
+<h2>Create Repo Command and point path to run it:</h2>
+<pre>. cd ~ <BR>. mkdir bin <BR>. sudo gedit .bashrc 
+<strong>
+Insert the following at the bottom of the text file that opens.</strong><BR>export PATH=${PATH}:~/bin <BR>Save and Exit
+<BR>. curl http://android.git.kernel.org/repo &gt;~/bin/repo 
+. chmod a+x   ~/bin/repo</pre>
+<h2>Obtaining Source:</h2>
+<pre>
+$ mkdir android
+$ mkdir system
+$ cd android/system
+$ repo init -u https://github.com/MotoMania/android -b ics 
+$ repo sync</pre>
+<H2>Building the System:</H2>
+<PRE>. build/envsetup.sh  <br>. lunch
+. make -j8 otapackage CND_RELEASE=true</PRE>
+<div CLASS="footer">Get the source code on GitHub : <a HREF="https://github.com/MotoMania/MotoMania">MotoMania/MotoMania</a>    </div>  
+ </div></body></html>
